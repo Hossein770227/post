@@ -4,7 +4,7 @@ from django.views import generic
 from .models import Post
 
 
-class PostListView(generic.Listview):
+class PostListView(generic.ListView):
     model=Post
     template_name='posts/post_list.html'
-    context_objects_name='posts'
+    context_object_name='posts'
