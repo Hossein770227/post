@@ -23,3 +23,9 @@ class PostCreateView(generic.CreateView):
     model = Post
     form_class =PostForm
     template_name = "posts/post_create.html"
+
+    
+class PostUpdateView(generic.UpdateView):
+    model=Post
+    form_class=PostForm
+    template_name='posts/post_create.html'
