@@ -27,9 +27,9 @@
         </div>
         <div class="mx-2 text-white">
             {% if user.is_authenticated %}
-                <h6>welcome {{user.username}}</h6>
+                welcome {{user.username}} |<a class="mx-2 text-white" href ="{% url "logout" %}"> logut</a>
             {% else %}
-                <a class="mx-2 text-white" href ="{% url "login" %}"> Log In</a>
+                <a class="mx-2 text-white" href ="{% url "login" %}"> Log In</a>|<a class="mx-2 text-white" href ="{% url "signup" %}"> Sign up</a>
             {% endif %}
         </div>
     </div>
